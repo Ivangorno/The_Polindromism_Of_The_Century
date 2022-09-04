@@ -21,7 +21,6 @@ public class Solution {
 
     static int getIntX() {
 
-        int number = 0;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a number:  ");
         while (!input.hasNextInt()) {
@@ -29,10 +28,7 @@ public class Solution {
             input.nextLine();
         }
 
-        number = input.nextInt();
-        input.close();
-
-        return number;
+        return input.nextInt();
     }
 
 
